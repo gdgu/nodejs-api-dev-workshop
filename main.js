@@ -5,6 +5,9 @@ var messages = [];
 var helloWorld = {
     "message": "Hello world!"
 };
+var fourZeroFour = {
+    "message": "404, not found!"
+};
 
 // no use as of now
 function handler(request, response) {
