@@ -8,7 +8,7 @@ function handler(request, response) {
     response.end('Hello World!');
 }
 
-function api() {
+function api(request, response) {
     
 }
 
