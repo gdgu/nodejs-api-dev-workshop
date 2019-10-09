@@ -11,7 +11,9 @@ function handler(request, response) {
 
 function api(request, response) {
     var method = request.method;
-    
+    if(method == 'POST') {
+        
+    }
 }
 
 var server = http.createServer(api);
