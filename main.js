@@ -38,12 +38,12 @@ function api(request, response) {
             messages.push(message);
 
             response.writeHead(200, {'Content-Type': 'application/json'});
-            response.end(JSON.stringify({"success": true}));
+            response.end(JSON.stringify({"success": true}, null, 5));
         });
     }
     else if(method == 'GET' && uri.pathname == '/api/messages') {
         response.writeHead(200, {'Content-Type': 'application/json'});
-        response.end(JSON.stringify(messages));
+        response.end(JSON.stringify(messages, null, 5));
     }
     else {
         response.writeHead(404, {'Content-Type': 'application/json'});
