@@ -8,7 +8,9 @@ function handler(request, response) {
     response.end('Hello World!');
 }
 
-
+function api() {
+    
+}
 
 var server = http.createServer(handler);
 var port = 8080;
