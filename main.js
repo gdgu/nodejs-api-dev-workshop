@@ -27,13 +27,15 @@ function postBody(request, callback) {
     })
 }
 
+
 function api(request, response) {
     var method = request.method;
     var uri = url.parse(request.url);
     console.log(method, uri.pathname, 'was requested');
     if(method == 'POST' && uri.pathname == '/api/message') {
-        response.writeHead(200, {'Content-Type': 'application/json'});
-        response.end(JSON.stringify(helloWorld));
+        postBody(request, function() {
+            
+        })
     }
     else if(method == 'GET' && uri.pathname == '/api/messages') {
         response.writeHead(200, {'Content-Type': 'application/json'});
