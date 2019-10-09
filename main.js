@@ -15,7 +15,7 @@ function api(request, response) {
     if(method == 'POST' && uri.pathname == '/api/message') {
 
     }
-    else if(method == 'GET') {
+    else if(method == 'GET' && uri.pathname == '/api/messages') {
 
     }
 }
