@@ -17,6 +17,10 @@ function handler(request, response) {
     response.end('Hello World!');
 }
 
+function postBody() {
+    
+}
+
 function api(request, response) {
     var method = request.method;
     var uri = url.parse(request.url);
