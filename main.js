@@ -47,7 +47,7 @@ function api(request, response) {
     }
     else {
         response.writeHead(404, {'Content-Type': 'application/json'});
-        response.end(JSON.stringify(fourZeroFour));
+        response.end(JSON.stringify(fourZeroFour, null, 5));
     }
 }
 
