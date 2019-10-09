@@ -17,8 +17,14 @@ function handler(request, response) {
     response.end('Hello World!');
 }
 
-function postBody() {
-    
+function postBody(request, callback) {
+    var body = '';
+    request.on('data', function(chunk) {
+        body += chunk;
+    })
+    request.on('end', function() {
+        c
+    })
 }
 
 function api(request, response) {
