@@ -22,7 +22,7 @@ function api(request, response) {
     }
     else {
         response.writeHead(404, {'Content-Type': 'text/plain'});
-        
+        response.end('404. Not found!');
     }
 }
 
