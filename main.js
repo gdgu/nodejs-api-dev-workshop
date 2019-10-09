@@ -1,6 +1,7 @@
 const http = require('http');
 const url = require('url');
 
+// no use as of now
 function handler(request, response) {
     var uri = url.parse(request.url);
     console.log(uri.pathname, 'was requested');
@@ -9,7 +10,7 @@ function handler(request, response) {
 }
 
 function api(request, response) {
-
+    
 }
 
 var server = http.createServer(api);
