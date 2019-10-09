@@ -6,8 +6,8 @@ function handler(request, response) {
 }
 
 var server = http.createServer(handler);
-server.listen();
+server.listen(port);
 
 var port = 8080;
 
-console.log('Server started at port ')
+console.log('Server started at port', port);
