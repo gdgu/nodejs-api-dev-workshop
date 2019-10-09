@@ -18,3 +18,9 @@ function api(request, response) {
         response.end(JSON.stringify(fourZeroFour));
     }
 }
+
+var server = http.createServer(api);
+var port = 8080;
+server.listen(port);
+
+console.log('Server started at port', port);
