@@ -40,7 +40,7 @@ function api(request, response) {
     }
     else if(method == 'GET' && uri.pathname == '/api/messages') {
         response.writeHead(200, {'Content-Type': 'application/json'});
-        response.end(JSON.stringify(messages)));
+        response.end(JSON.stringify(messages));
     }
     else {
         response.writeHead(404, {'Content-Type': 'application/json'});
