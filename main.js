@@ -3,7 +3,7 @@ const url = require('url');
 
 var messages = [];
 var helloWorld = {
-
+    "message": "Hello world!"
 };
 
 // no use as of now
