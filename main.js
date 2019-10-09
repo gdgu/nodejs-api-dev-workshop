@@ -21,6 +21,7 @@ function api(request, response) {
         response.end('Hello World!');
     }
     else {
+        response.writeHead(404, {'Content-Type': 'text/plain'});
         
     }
 }
