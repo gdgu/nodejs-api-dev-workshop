@@ -13,10 +13,12 @@ function api(request, response) {
     var method = request.method;
     var uri = url.parse(request.url);
     if(method == 'POST' && uri.pathname == '/api/message') {
-
+        response.writeHead(200, {'Content-Type': 'text/plain'});
+        response.end('Hello World!');
     }
     else if(method == 'GET' && uri.pathname == '/api/messages') {
-
+        response.writeHead(200, {'Content-Type': 'text/plain'});
+    response.end('Hello World!');
     }
 }
 
