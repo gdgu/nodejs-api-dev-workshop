@@ -12,7 +12,7 @@ function handler(request, response) {
 function api(request, response) {
     var method = request.method;
     var uri = url.parse(request.url);
-    if(method == 'POST' && ) {
+    if(method == 'POST' && uri.pathname == '/api/message') {
 
     }
     else if(method == 'GET') {
