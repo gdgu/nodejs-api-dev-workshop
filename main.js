@@ -12,6 +12,9 @@ function handler(request, response) {
 function api(request, response) {
     var method = request.method;
     if(method == 'POST') {
+
+    }
+    else if(method == 'GET') {
         
     }
 }
