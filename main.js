@@ -6,4 +6,4 @@ function handler(request, response) {
     response.end('Hello World!');
 }
 
-var server = http.createServer();
+var server = http.createServer(handler);
