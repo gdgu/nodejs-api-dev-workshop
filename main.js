@@ -23,7 +23,7 @@ function api(request, response) {
         response.end('Hello World!');
     }
     else if(method == 'GET' && uri.pathname == '/api/messages') {
-        response.writeHead(200, {'Content-Type': 'text/plain'});
+        response.writeHead(200, {'Content-Type': 'application/json'});
         response.end('Hello World!');
     }
     else {
