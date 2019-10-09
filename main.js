@@ -2,6 +2,9 @@ const http = require('http');
 const url = require('url');
 
 var messages = [];
+var helloWorld = {
+
+};
 
 // no use as of now
 function handler(request, response) {
