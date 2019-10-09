@@ -20,11 +20,11 @@ function api(request, response) {
     console.log(method, uri.pathname, 'was requested');
     if(method == 'POST' && uri.pathname == '/api/message') {
         response.writeHead(200, {'Content-Type': 'application/json'});
-        response.end('Hello World!');
+        response.end(JSON.stringify(helloWorld));
     }
     else if(method == 'GET' && uri.pathname == '/api/messages') {
         response.writeHead(200, {'Content-Type': 'application/json'});
-        response.end('Hello World!');
+        response.end(JSON.stringify(helloWorld));
     }
     else {
         response.writeHead(404, {'Content-Type': 'application/json'});
