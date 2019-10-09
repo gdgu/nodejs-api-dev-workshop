@@ -18,7 +18,10 @@ function api(request, response) {
     }
     else if(method == 'GET' && uri.pathname == '/api/messages') {
         response.writeHead(200, {'Content-Type': 'text/plain'});
-    response.end('Hello World!');
+        response.end('Hello World!');
+    }
+    else {
+        
     }
 }
 
