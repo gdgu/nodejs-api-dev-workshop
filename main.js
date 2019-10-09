@@ -1,7 +1,7 @@
 const http = require('http');
 const url = require('url');
 
-
+var messages = [];
 
 // no use as of now
 function handler(request, response) {
