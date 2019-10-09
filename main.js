@@ -1,7 +1,5 @@
 const http = require('http');
 
-
-
 function handler(request, response) {
     response.writeHead(200, {'Content-Type': 'text/plain'});
     response.end('Hello World!');
@@ -9,5 +7,7 @@ function handler(request, response) {
 
 var server = http.createServer(handler);
 server.listen();
+
+var port = 8080;
 
 console.log('Server started at port ')
