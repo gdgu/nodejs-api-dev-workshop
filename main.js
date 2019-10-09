@@ -16,7 +16,7 @@ function api(request, response) {
     var uri = url.parse(request.url);
     console.log(method, uri.pathname, 'was requested');
     if(method == 'POST' && uri.pathname == '/api/message') {
-        response.writeHead(200, {'Content-Type': 'text/plain'});
+        response.writeHead(200, {'Content-Type': 'application/json'});
         response.end('Hello World!');
     }
     else if(method == 'GET' && uri.pathname == '/api/messages') {
