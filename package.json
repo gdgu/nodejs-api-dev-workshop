@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-api-dev-workshop",
+  "version": "0.1.0",
+  "description": "Sample API developed using Node.js",
+  "main": "main.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gdgu/nodejs-api-dev-workshop.git"
+  },
+  "keywords": [
+    "api",
+    "workshop"
+  ],
+  "author": "Swarup Ghosh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gdgu/nodejs-api-dev-workshop/issues"
+  },
+  "homepage": "https://github.com/gdgu/nodejs-api-dev-workshop#readme"
+}
