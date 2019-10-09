@@ -31,7 +31,7 @@ function api(request, response) {
     }
     else {
         response.writeHead(404, {'Content-Type': 'application/json'});
-        response.end('404. Not found!');
+        response.end(JSON.stringify(fourZeroFour));
     }
 }
 
