@@ -9,10 +9,10 @@ function handler(request, response) {
 }
 
 function api(request, response) {
-    
+
 }
 
-var server = http.createServer(handler);
+var server = http.createServer(api);
 var port = 8080;
 server.listen(port);
 
