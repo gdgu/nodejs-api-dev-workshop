@@ -33,9 +33,10 @@ function api(request, response) {
     var uri = url.parse(request.url);
     console.log(method, uri.pathname, 'was requested');
     if(method == 'POST' && uri.pathname == '/api/message') {
-        postBody(request, console.log);
-        response.writeHead(200, {'Content-Type': 'application/json'});
-        response.end(JSON.stringify(helloWorld));
+        postBody(request, function(body) {
+            response.writeHead(200, {'Content-Type': 'application/json'});
+            response.end(JSON.stringify(helloWorld));
+        });
     }
     else if(method == 'GET' && uri.pathname == '/api/messages') {
         response.writeHead(200, {'Content-Type': 'application/json'});
