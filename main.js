@@ -23,7 +23,7 @@ function postBody(request, callback) {
         body += chunk;
     })
     request.on('end', function() {
-        c
+        callback(body);
     })
 }
 
