@@ -36,9 +36,9 @@ function api(request, response) {
         postBody(request, function(body) {
             var message = JSON.parse(body);
             messages.push(message);
-            
+
             response.writeHead(200, {'Content-Type': 'application/json'});
-            response.end(JSON.stringify(helloWorld));
+            response.end(JSON.stringify({"success": true}));
         });
     }
     else if(method == 'GET' && uri.pathname == '/api/messages') {
